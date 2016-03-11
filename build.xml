@@ -51,7 +51,7 @@
 			<classpath>
 				<pathelement location="${build}" />
 			</classpath>
-			<xmlfileset dir="${basedir}" includes="testNG.xml" />
+			<xmlfileset dir="${basedir}" includes="testNG_crossbrowser.xml" />
 		</testng>
 	</target>
 
