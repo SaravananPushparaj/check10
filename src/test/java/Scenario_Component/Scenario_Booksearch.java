@@ -16,7 +16,7 @@ public class Scenario_Booksearch extends BaseClass {
 	public void TestInvalidsearch(String TCID, String Order, String Search_Item, String Exp_Res) throws IOException
 	{
 		log.info("Executing the Test case " +TCID + " Order id is  " +Order);
-		InitializeBrowser();
+		//InitializeBrowser();
 		PageObject_Search BS_pob= new PageObject_Search(driver);
 		BS_pob.Commonprocess_Search(Search_Item);
 		String Actual_Res = BS_pob.getInvalidmsg();
@@ -31,7 +31,7 @@ public class Scenario_Booksearch extends BaseClass {
 			log.info("Failed as Exp ms was " +Exp_Res + " Actual msg is  " +Actual_Res);
 		}
 		
-		teardown();
+		//teardown();
 		
 	}
 	
@@ -39,7 +39,7 @@ public class Scenario_Booksearch extends BaseClass {
 		public void Testvalidsearch(String TCID, String Order, String Search_Item, String Exp_Res) throws IOException
 		{
 			log.info("Executing the Test case " +TCID + " Order id is  " +Order);
-			InitializeBrowser();
+			//InitializeBrowser();
 			PageObject_Search BS_pob= new PageObject_Search(driver);
 			BS_pob.Commonprocess_Search(Search_Item);
 			String Actual_Res = BS_pob.getValidmsg();
@@ -54,7 +54,7 @@ public class Scenario_Booksearch extends BaseClass {
 				log.info("Failed as Exp ms was " +Exp_Res + " Actual msg is  " +Actual_Res);
 			}
 			
-			teardown();
+			//teardown();
 		
 		
 		
