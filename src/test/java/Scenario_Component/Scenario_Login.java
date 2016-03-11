@@ -19,7 +19,7 @@ public class Scenario_Login extends BaseClass {
 	public void TestInValidLogin(String TCID, String Order,String Uname, String Pwd, String Exp_Res) throws IOException
 	{
 		log.info("Executing the Test case " +TCID + " Order id is  " +Order);
-		InitializeBrowser();
+		//InitializeBrowser();
 		PageObject_Login lpob= new PageObject_Login(driver);
 		lpob.Commonprocess_Login(Uname, Pwd);
 		String Actual_Res = lpob.getInvalidmsg();
@@ -66,7 +66,7 @@ public class Scenario_Login extends BaseClass {
 		}
 		
 		lpob.Click_signout();
-		teardown();
+		//teardown();
 		
 		
 	}
