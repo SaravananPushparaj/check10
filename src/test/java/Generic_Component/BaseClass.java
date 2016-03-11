@@ -28,10 +28,10 @@ public class BaseClass {
 	Utility_Class c1= new Utility_Class();
 	static Logger log= Logger.getLogger(BaseClass.class);
 	
-	//@Parameters("browser")
-	//@BeforeMethod(groups="{smoke}")
+	@Parameters("browser")
+	@BeforeMethod
 	
-	public void InitializeBrowser() throws IOException
+	public void InitializeBrowser(String browser_type) throws IOException
 	{
 		
 //		DesiredCapabilities cap = new DesiredCapabilities();
@@ -51,7 +51,7 @@ public class BaseClass {
 //		URL url =new URL("http://192.168.0.107:4444/wd/hub");
 //		 driver = new RemoteWebDriver(url,cap);
 		 
-		String browser_type = c1.reading_properties("btype");
+		//browser_type = c1.reading_properties("btype");
 		
 		if(browser_type.equals("ff"))
 		{
