@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RegSet1"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="19.415">
+  <properties />
+  
+  
+            <testcase name="TestInValidLogin" time="19.415" classname="Scenario_Component.Scenario_Login" />
+      
+</testsuite>

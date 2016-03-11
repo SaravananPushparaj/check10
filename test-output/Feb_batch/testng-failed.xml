@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Feb_batch]" parallel="tests">
+  <parameter name="browser" value="ie"/>
+  <test name="ChromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="ch"/>
+    <classes>
+      <class name="Scenario_Component.Scenario_Booksearch">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="Testvalidsearch" invocation-numbers="0"/>
+          <include name="InitializeBrowser"/>
+          <include name="InitializeBrowser"/>
+          <include name="InitializeBrowser"/>
+        </methods>
+      </class> <!-- Scenario_Component.Scenario_Booksearch -->
+      <class name="Scenario_Component.Scenario_Login">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="InitializeBrowser"/>
+          <include name="InitializeBrowser"/>
+          <include name="InitializeBrowser"/>
+        </methods>
+      </class> <!-- Scenario_Component.Scenario_Login -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test name="IETest(failed)" parallel="tests">
+    <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="Scenario_Component.Scenario_Booksearch">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="InitializeBrowser"/>
+          <include name="InitializeBrowser"/>
+          <include name="InitializeBrowser"/>
+        </methods>
+      </class> <!-- Scenario_Component.Scenario_Booksearch -->
+      <class name="Scenario_Component.Scenario_Login">
+        <methods>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="InitializeBrowser"/>
+          <include name="InitializeBrowser"/>
+          <include name="InitializeBrowser"/>
+          <include name="TestInValidLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Scenario_Component.Scenario_Login -->
+    </classes>
+  </test> <!-- IETest(failed) -->
+</suite> <!-- Failed suite [Feb_batch] -->

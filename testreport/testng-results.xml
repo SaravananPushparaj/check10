@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Octbatch" duration-ms="31231" started-at="2016-03-11T14:05:48Z" finished-at="2016-03-11T14:06:20Z">
+    <groups>
+      <group name="smoke">
+        <method signature="Scenario_Booksearch.Testvalidsearch(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Scenario_Component.Scenario_Booksearch@1a968a59]" name="Testvalidsearch" class="Scenario_Component.Scenario_Booksearch"/>
+        <method signature="Scenario_Login.TestInValidLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Scenario_Component.Scenario_Login@5622fdf]" name="TestInValidLogin" class="Scenario_Component.Scenario_Login"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test name="RegSet1" duration-ms="31231" started-at="2016-03-11T14:05:48Z" finished-at="2016-03-11T14:06:20Z">
+      <class name="Scenario_Component.Scenario_Login">
+        <test-method status="PASS" signature="TestInValidLogin(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Scenario_Component.Scenario_Login@5622fdf]" name="TestInValidLogin" duration-ms="19415" started-at="2016-03-11T19:35:49Z" data-provider="dp_InvalidLogin" finished-at="2016-03-11T19:36:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GB_01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ghg]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[drg]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Sorry we were unable to complete this step because :]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestInValidLogin -->
+      </class> <!-- Scenario_Component.Scenario_Login -->
+      <class name="Scenario_Component.Scenario_Booksearch">
+        <test-method status="PASS" signature="Testvalidsearch(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Scenario_Component.Scenario_Booksearch@1a968a59]" name="Testvalidsearch" duration-ms="11582" started-at="2016-03-11T19:36:08Z" data-provider="dp_validsearch" finished-at="2016-03-11T19:36:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GB_11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Jaico]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Testvalidsearch -->
+      </class> <!-- Scenario_Component.Scenario_Booksearch -->
+    </test> <!-- RegSet1 -->
+  </suite> <!-- Octbatch -->
+</testng-results>
